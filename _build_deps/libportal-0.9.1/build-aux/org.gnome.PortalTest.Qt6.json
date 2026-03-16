@@ -1,0 +1,35 @@
+{
+    "app-id": "org.gnome.PortalTest.Qt6",
+    "runtime": "org.kde.Platform",
+    "runtime-version": "6.7",
+    "sdk": "org.kde.Sdk",
+    "command": "portal-test-qt6",
+    "finish-args": [
+        "--socket=wayland",
+        "--socket=x11",
+        "--socket=pulseaudio"
+    ],
+    "modules": [
+        {
+            "name": "portal-test-qt6",
+            "buildsystem": "meson",
+            "builddir": true,
+            "config-opts": [
+              "-Dbackend-gtk3=disabled",
+              "-Dbackend-gtk4=disabled",
+              "-Dbackend-qt5=disabled",
+              "-Dbackend-qt6=enabled",
+              "-Dportal-tests=true",
+              "-Dintrospection=false",
+              "-Dvapi=false",
+              "-Ddocs=false"
+            ],
+            "sources": [
+                {
+                    "type": "dir",
+                    "path": "../"
+                }
+            ]
+        }
+    ]
+}

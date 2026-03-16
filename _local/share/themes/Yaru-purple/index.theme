@@ -1,0 +1,16 @@
+[Desktop Entry]
+Name=Yaru-purple
+Type=X-GNOME-Metatheme
+Comment=Ubuntu Yaru-purple theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Yaru-purple
+MetacityTheme=Yaru
+IconTheme=Yaru-purple
+CursorTheme=Yaru
+CursorSize=24
+X-Yaru-Dark=false
+X-Yaru-Accent-Name=purple
+X-Yaru-Accent-Color=#7764D8
+/Users/lnbodicherla/Documents/gnome-nautilus/_build_deps/yaru-24.10.1/build/gtk/src/Yaru-purple-purple-accent-color-info.scss:46 DEBUG: Contrast optimized accent is #9b8de2

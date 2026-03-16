@@ -1,0 +1,12 @@
+prefix=/Users/lnbodicherla/Documents/gnome-nautilus/_local
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: gnome-rr-4
+Description: Display information utility library for GNOME desktop components
+Version: 44.5
+Requires: gsettings-desktop-schemas >=  3.27.0
+Requires.private: gnome-desktop-4, gdk-pixbuf-2.0 >=  2.36.5, glib-2.0 >=  2.53.0, gio-2.0 >=  2.53.0, gio-unix-2.0 >=  2.53.0, xkeyboard-config, xkbregistry, iso-codes, gtk4 >=  4.4.0
+Libs: -L${libdir} -lgnome-rr-4
+Libs.private: -lm
+Cflags: -I${includedir}/gnome-desktop-4.0

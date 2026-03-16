@@ -1,0 +1,34 @@
+{
+    "app-id": "org.gnome.PortalTest.Gtk4",
+    "runtime": "org.gnome.Platform",
+    "runtime-version": "47",
+    "sdk": "org.gnome.Sdk",
+    "command": "org.gnome.PortalTest.Gtk4",
+    "finish-args": [
+        "--device=dri",
+        "--socket=wayland",
+        "--socket=x11",
+        "--socket=pulseaudio"
+    ],
+    "modules": [
+        {
+            "name": "portal-test-gtk4",
+            "buildsystem": "meson",
+            "builddir": true,
+            "config-opts": [
+              "-Dbackend-gtk3=disabled",
+              "-Dbackend-gtk4=enabled",
+              "-Dbackend-qt5=disabled",
+              "-Dbackend-qt6=disabled",
+              "-Dportal-tests=true",
+              "-Ddocs=false"
+            ],
+            "sources": [
+                {
+                    "type": "dir",
+                    "path": "../"
+                }
+            ]
+        }
+    ]
+}

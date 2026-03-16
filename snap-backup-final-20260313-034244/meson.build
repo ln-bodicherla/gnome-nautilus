@@ -1,0 +1,129 @@
+# Snap versioning integration
+# Build configuration for src/snap/
+
+snap_sources = files(
+  'snap-actions.c',
+  'snap-actions.h',
+  'snap-config.c',
+  'snap-config.h',
+  'snap-diff.c',
+  'snap-diff.h',
+  'snap-encryption.c',
+  'snap-encryption.h',
+  'snap-hash.c',
+  'snap-hash.h',
+  'snap-hooks.c',
+  'snap-hooks.h',
+  'snap-manager.c',
+  'snap-manager.h',
+  'snap-notify.c',
+  'snap-notify.h',
+  'snap-server.c',
+  'snap-server.h',
+  'snap-store.c',
+  'snap-store.h',
+  'snap-sync.c',
+  'snap-sync.h',
+  'snap-template.c',
+  'snap-template.h',
+  'snap-watcher.c',
+  'snap-watcher.h',
+  # Phase 3: Main feature dialogs
+  'snap-save-dialog.c',
+  'snap-save-dialog.h',
+  'snap-history-dialog.c',
+  'snap-history-dialog.h',
+  'snap-diff-dialog.c',
+  'snap-diff-dialog.h',
+  'snap-restore-dialog.c',
+  'snap-restore-dialog.h',
+  'snap-browse-dialog.c',
+  'snap-browse-dialog.h',
+  'snap-log-dialog.c',
+  'snap-log-dialog.h',
+  # Phase 4: Advanced feature dialogs
+  'snap-branch-dialog.c',
+  'snap-branch-dialog.h',
+  'snap-group-dialog.c',
+  'snap-group-dialog.h',
+  'snap-encrypt-dialog.c',
+  'snap-encrypt-dialog.h',
+  'snap-sync-dialog.c',
+  'snap-sync-dialog.h',
+  'snap-backup-dialog.c',
+  'snap-backup-dialog.h',
+  'snap-config-dialog.c',
+  'snap-config-dialog.h',
+  'snap-gc-dialog.c',
+  'snap-gc-dialog.h',
+  'snap-audit-dialog.c',
+  'snap-audit-dialog.h',
+  'snap-blame-dialog.c',
+  'snap-blame-dialog.h',
+  'snap-stats-dialog.c',
+  'snap-stats-dialog.h',
+  'snap-hook-dialog.c',
+  'snap-hook-dialog.h',
+  'snap-import-git-dialog.c',
+  'snap-import-git-dialog.h',
+  'snap-stash-dialog.c',
+  'snap-stash-dialog.h',
+  # Search integration
+  'snap-search-engine-snap.c',
+  'snap-search-engine-snap.h',
+  # Keyboard shortcuts dialog
+  'snap-shortcuts-dialog.c',
+  'snap-shortcuts-dialog.h',
+  # Recent locations tracker
+  'snap-recent-locations.c',
+  'snap-recent-locations.h',
+  # Quick filter bar (Dolphin Ctrl+I style)
+  'snap-filter-bar.c',
+  'snap-filter-bar.h',
+  # Status bar (Dolphin-style bottom bar)
+  'snap-statusbar.c',
+  'snap-statusbar.h',
+  # Terminal panel (Dolphin F4 style)
+  'snap-terminal-panel.c',
+  'snap-terminal-panel.h',
+  # Phase 5: Visual integration
+  'snap-inspector-panel.c',
+  'snap-inspector-panel.h',
+  'snap-status-indicator.c',
+  'snap-status-indicator.h',
+  # Split view (Dolphin F3 style)
+  'snap-split-view.c',
+  'snap-split-view.h',
+  # File preview panel
+  'snap-preview-panel.c',
+  'snap-preview-panel.h',
+  # Places toolbar (Dolphin-style bookmarks bar)
+  'snap-places-toolbar.c',
+  'snap-places-toolbar.h',
+  # Undo history panel
+  'snap-undo-history.c',
+  'snap-undo-history.h',
+  # Disk usage analyzer
+  'snap-disk-usage.c',
+  'snap-disk-usage.h',
+  # Checksum dialog
+  'snap-checksum-dialog.c',
+  'snap-checksum-dialog.h',
+  # Batch rename dialog
+  'snap-batch-rename-dialog.c',
+  'snap-batch-rename-dialog.h',
+  # File notes and tags
+  'snap-file-notes.c',
+  'snap-file-notes.h',
+  'snap-notes-dialog.c',
+  'snap-notes-dialog.h',
+  # File comparison dialog
+  'snap-compare-dialog.c',
+  'snap-compare-dialog.h',
+  # Folder colors
+  'snap-folder-color.c',
+  'snap-folder-color.h',
+  # Custom actions
+  'snap-custom-actions.c',
+  'snap-custom-actions.h',
+)

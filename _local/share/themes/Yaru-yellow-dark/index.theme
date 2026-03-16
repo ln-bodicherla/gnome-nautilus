@@ -1,0 +1,16 @@
+[Desktop Entry]
+Name=Yaru-yellow-dark
+Type=X-GNOME-Metatheme
+Comment=Ubuntu Yaru-yellow-dark theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Yaru-yellow-dark
+MetacityTheme=Yaru-dark
+IconTheme=Yaru-yellow-dark
+CursorTheme=Yaru
+CursorSize=24
+X-Yaru-Dark=true
+X-Yaru-Accent-Name=yellow
+X-Yaru-Accent-Color=#C88800
+/Users/lnbodicherla/Documents/gnome-nautilus/_build_deps/yaru-24.10.1/build/gtk/src/Yaru-yellow-dark-yellow-accent-color-info.scss:46 DEBUG: Contrast optimized accent is #9c6a00

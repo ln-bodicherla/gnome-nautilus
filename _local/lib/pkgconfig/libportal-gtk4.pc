@@ -1,0 +1,11 @@
+prefix=/Users/lnbodicherla/Documents/gnome-nautilus/_local
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: libportal-gtk4
+Description: Portal API wrappers (GTK4)
+Version: 0.9.1
+Requires: gtk4, libportal
+Requires.private: gio-2.0 >=  2.72, gio-unix-2.0
+Libs: -L${libdir} -lportal-gtk4
+Cflags: -I${includedir}

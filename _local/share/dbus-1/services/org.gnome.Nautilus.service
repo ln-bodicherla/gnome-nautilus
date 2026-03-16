@@ -1,0 +1,3 @@
+[D-BUS Service]
+Name=org.gnome.Nautilus
+Exec=/Users/lnbodicherla/Documents/gnome-nautilus/_local/bin/nautilus --gapplication-service

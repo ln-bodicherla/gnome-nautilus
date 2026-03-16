@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.freedesktop.Tracker3.Miner.Files" path="/org/freedesktop/tracker/miner/files/">
+    <key name="index-single-directories" type="as">
+      <default>['&amp;DESKTOP', '&amp;DOCUMENTS', '&amp;DOWNLOAD', '&amp;MUSIC', '&amp;PICTURES', '&amp;VIDEOS']</default>
+      <summary>Directories to index</summary>
+    </key>
+    <key name="index-recursive-directories" type="as">
+      <default>['&amp;DESKTOP', '&amp;DOCUMENTS', '&amp;DOWNLOAD', '&amp;MUSIC', '&amp;PICTURES', '&amp;VIDEOS']</default>
+      <summary>Directories to index recursively</summary>
+    </key>
+  </schema>
+</schemalist>

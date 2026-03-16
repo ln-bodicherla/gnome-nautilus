@@ -1,0 +1,124 @@
+Changes in 0.9.1, 2025-02-12
+============================
+
+Dependencies:
+
+- Meson 0.55.0 is required
+
+Bug fixes:
+
+- Fix memory management in the Input Capture portal code (#169, #190)
+- Correct the type used for GObject signal connections (#184)
+- Remove wrong `(closure)` annotations, fixing GObject-Introspection warnings
+  (#182)
+- Don't require a C++ compiler for the build architecture (#181)
+- Fix Meson warnings (#181)
+- Consistently use `#pragma once` (#192)
+- Initialize all g_autoptr variables (#180)
+
+Changes in 0.9.0, 21-12-2024
+==========================
+
+Dependencies:
+
+- GLib 2.72 or higher is now required
+
+Features:
+
+- Introduce support for the Notification v2 portal version
+
+Bug fixes:
+
+- Fix a file descriptor leak in the Mail portal code
+- Fix some minor memory leaks
+
+Changes in 0.8.1, 04-09-2024
+==========================
+
+- Fix a regression in the Remote Desktop where it wouldn't work with the
+  ScreenCast portal correctly.
+- Use non-deprecated functions in the GTK4 code
+- Run tests in CI so we catch regressions earlier
+- Make Qt tests use QTEST_GUILESS_MAIN
+- Fix an Input Capture test
+
+Changes in 0.8.0, 02-09-2024
+==========================
+
+- Add API to allow for persistence on RemoteDesktop sessions
+- Implement support for the Input Capture portal
+- Add support for Qt 6
+- Support xdg-foreign with Qt 6
+- Fix screencasting on wlroots-based compositors
+
+
+Changes in 0.7.1, 09-09-2023
+==========================
+
+- Restore ability to call g_object_new (XDP_TYPE_PORTAL, ...)
+
+Changes in 0.7, 06-09-2023
+==========================
+
+- Add support for the new SetStatus() method of the Background portal
+- Add support for the new ConnectToEIS() method of the Remote Desktop portal
+- Improve unit and integration tests
+- Documentation improvements
+- CI improvements
+
+Changes in 0.6, 21-03-2022
+==========================
+
+- New portal support: Dynamic launcher
+- Add API for checking for flatpak/snap sandbox
+- Fix a bug where the callback setup by libportal for a GCancellable was not
+  properly canceled in case a portal method call was not successful, which can
+  lead to a double free seg fault
+- libportal-qt: Add convenient functions to better deal with GVariants
+- libportal-qt: Use a global instance of XdpPortal object
+- libportal-qt: make filechooserFilterToGVariant() public
+- camera: Use correct variant for is_camera_present()
+- portal-test-gtk3: Fix incorrect paths used in tests
+- Documentation improvements
+- CI improvements
+
+Changes in 0.5, 21-12-2021
+==========================
+
+- Relicence to LGPL 3.0
+- Fix a refcounting error in xdp_parent_free
+- location: Fix location-updated signature
+- remote: Add cursor mode
+- remote: Support virtual screens
+- remote: Support persistent sessions
+- Rename qt backend to qt5
+- Install separate libraries: libportal-gtk3, libportal-gtk4, libportal-qt5
+- Add gobject-introspection support
+- Add vala support
+- Add a GTK4 portal test app, using gjs
+- Build documentation using gi-docgen
+
+Changes in 0.4
+==============
+
+- Make GTK4 support work with GTK 4.0
+- Qt5 support
+- OpenURI: Support write access
+- Build fixes
+- Add more tests
+- Require GLib 2.58
+
+Changes in 0.3
+==============
+
+- Clean up includes
+- Future-proof the API
+- Test and fix update monitor APIs
+
+Changes in 0.2
+==============
+
+- Build a portal-test application if you specify -Dbuild-portal-test=true
+- The portal-test app comes with a flatpak build script for ease of testing
+- The OpenURI call has gained an 'ask' argument
+- 

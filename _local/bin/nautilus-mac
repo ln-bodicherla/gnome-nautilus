@@ -1,0 +1,20 @@
+#!/bin/bash
+# Launch script for GNOME Nautilus on macOS
+
+PREFIX="$(cd "$(dirname "$0")/.." && pwd)"
+
+export GSETTINGS_SCHEMA_DIR="$PREFIX/share/glib-2.0/schemas:/opt/homebrew/share/glib-2.0/schemas"
+export XDG_DATA_DIRS="$PREFIX/share:/opt/homebrew/share:/usr/share"
+export DYLD_INSERT_LIBRARIES="$PREFIX/lib/libcgl_interpose.dylib"
+export GSK_RENDERER=cairo
+# Yaru icons; GTK theme handled via gsettings below
+
+# Start a D-Bus session if not already running
+if [ -z "$DBUS_SESSION_BUS_ADDRESS" ]; then
+    DBUS_ADDR=$(dbus-daemon --session --fork --address=unix:tmpdir=/tmp --print-address 2>/dev/null)
+    if [ -n "$DBUS_ADDR" ]; then
+        export DBUS_SESSION_BUS_ADDRESS="$DBUS_ADDR"
+    fi
+fi
+
+exec "$PREFIX/bin/nautilus" "$@"
